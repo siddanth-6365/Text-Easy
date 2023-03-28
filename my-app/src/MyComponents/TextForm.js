@@ -20,6 +20,8 @@ const TextForm = () => {
 
   }
 
+
+
   const changeCase = () => {
     if (text == "") {
       alert("text area can not be empty");
@@ -50,6 +52,9 @@ const TextForm = () => {
    setText(text.split("  ").join(" "))
   
   }
+  const cleartextfun = () => {
+    setText("");
+  }
 
   const Copytextfun = () => {
     if (text == "") {
@@ -60,6 +65,34 @@ const TextForm = () => {
     navigator.clipboard.writeText(textcopy.value);
     setAlertfun("Copied the Text !")
   }
+
+
+  const utterThis = new SpeechSynthesisUtterance()
+  const synth = window.speechSynthesis
+  let ourText = ""
+  
+  const checkBrowserCompatibility = () => {
+    "speechSynthesis" in window
+      ? console.log("Web Speech API supported!")
+      : console.log("Web Speech API not supported :-(")
+  }
+  
+  checkBrowserCompatibility()
+  
+  const listenNowfun = () => {
+    if (text == "") {
+      alert("text area can not be empty");
+    }
+    ourText = text;
+    utterThis.text = ourText
+    synth.speak(utterThis)
+
+  }
+  
+
+
+
+
 
   return (
     <>
@@ -101,6 +134,8 @@ const TextForm = () => {
             Change Font
           </button>
           <button type="button" onClick={spacetextfun} className="btn btn-info rounded-pill px-3">Remove-spaces</button>
+          <button type="button" onClick={cleartextfun} className="btn btn-info rounded-pill px-3">Clear-Text</button>
+          <button type="button" onClick={listenNowfun} className="btn btn-info rounded-pill px-3">Listen</button>
 
           <button type="button" onClick={Copytextfun} className="btn btn-info rounded-pill px-3">Copy-Text</button>
 

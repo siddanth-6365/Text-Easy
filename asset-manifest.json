@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/siddanth-6365/Text-Easy.git/static/css/main.7d188c19.css",
-    "main.js": "/siddanth-6365/Text-Easy.git/static/js/main.e43d2675.js",
-    "static/js/787.28cb0dcd.chunk.js": "/siddanth-6365/Text-Easy.git/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/siddanth-6365/Text-Easy.git/index.html",
-    "main.7d188c19.css.map": "/siddanth-6365/Text-Easy.git/static/css/main.7d188c19.css.map",
-    "main.e43d2675.js.map": "/siddanth-6365/Text-Easy.git/static/js/main.e43d2675.js.map",
-    "787.28cb0dcd.chunk.js.map": "/siddanth-6365/Text-Easy.git/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/Text-Easy/static/css/main.7d188c19.css",
+    "main.js": "/Text-Easy/static/js/main.2c744c9d.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Text-Easy/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/Text-Easy/index.html",
+    "main.7d188c19.css.map": "/Text-Easy/static/css/main.7d188c19.css.map",
+    "main.2c744c9d.js.map": "/Text-Easy/static/js/main.2c744c9d.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Text-Easy/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7d188c19.css",
-    "static/js/main.e43d2675.js"
+    "static/js/main.2c744c9d.js"
   ]
 }
